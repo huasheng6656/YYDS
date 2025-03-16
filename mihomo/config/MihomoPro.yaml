@@ -52,8 +52,18 @@ ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical,
 # 远程订阅组
 # 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
-  机场A: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[A] '}}
-  机场B: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[B] '}}
+  机场A: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=c5575c437d9aeecef17fd52f0ac05128', override: {additional-prefix: '[A] '}}
+  机场B: {<<: *PProviders, url: 'https://subscription.sukiaira.com/api/v1/client/subscribe?token=f85533b4b96b89c75b7ad5a5c9ec1692', override: {additional-prefix: '[B] '}}
+  机场C: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=103cf046de9f8bbf9179ddecbfd3b752', override: {additional-prefix: '[C] '}}
+  机场D: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=51491fdcdb60fee5a10b8445e34de7d7', override: {additional-prefix: '[D] '}}
+  机场E: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=5c03045c6c6a6375c5f64793fe78d491', override: {additional-prefix: '[E] '}}
+  机场F: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=c78fbd38f40663710843a727d88170f4', override: {additional-prefix: '[F] '}}
+  机场G: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=39dcea3a4f9730fe865b352c6129bdea', override: {additional-prefix: '[G] '}}
+  机场H: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=0d67367cd148f78e0f0fc88d879921a3', override: {additional-prefix: '[H] '}}
+  机场I: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=72c4f67d56f97a1dae92771dedefe260', override: {additional-prefix: '[I] '}}
+  机场J: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=8fdce87d7843636377afb33845c69f10', override: {additional-prefix: '[J] '}}  
+  机场K: {<<: *PProviders, url: 'https://52pokemon.xz61.cn/api/v1/client/subscribe?token=5b5bad1e76e8df812bf913c584b858cb', override: {additional-prefix: '[K] '}}
+  机场L: {<<: *PProviders, url: 'https://topsex.cc/api/v1/client/subscribe?token=5a7747289e1e701f20f64bc815de01ea', override: {additional-prefix: '[L] '}}
 
 # 全局配置
 port: 7890
